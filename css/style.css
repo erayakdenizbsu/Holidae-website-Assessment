@@ -31,19 +31,26 @@ body {
   margin: 1rem 0;
 }
 
+/* Buttons – global */
 .btn {
   display: inline-block;
-  padding: .8rem 1.5rem;
-  background: #0a4cff;
-  color: white;
+  background: #0f4cff;
+  color: #fff;
+  padding: 10px 20px; 
+  font-size: 0.95rem; 
+  font-weight: 600;
+  border-radius: 8px;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
 .btn:hover {
-  background: #0033cc;
+  background: #0836c9;
+  transform: translateY(-1px);
 }
+
 
 footer {
   text-align: center;
@@ -77,7 +84,7 @@ footer {
 }
 
 .package-card ul {
-  padding-left: 1.2rem;   /* намалява отстоянието */
+  padding-left: 1.2rem; 
   margin-left: 0;
   list-style-position: inside;
 }
@@ -330,21 +337,21 @@ img, video {
 
 @media (max-width: 900px) {
   .packages-grid {
-    grid-template-columns: 1fr; /* картите една под друга */
+    grid-template-columns: 1fr; 
   }
 
   .form-grid {
-    grid-template-columns: 1fr; /* формата на 1 колона */
+    grid-template-columns: 1fr;
   }
 
   .nav {
-    flex-wrap: wrap;            /* да не излиза извън екрана */
+    flex-wrap: wrap;       
     gap: 10px;
     padding: 12px 16px;
   }
 
   .nav a {
-    padding: 10px 12px;         /* по-лесно за натискане */
+    padding: 10px 12px;
     font-size: 16px;
   }
 
@@ -366,7 +373,7 @@ img, video {
   }
 
   .btn {
-    width: 100%;                /* бутоните да са full width */
+    width: 100%;       
     max-width: 360px;
   }
 }
