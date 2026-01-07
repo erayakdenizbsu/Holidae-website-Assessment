@@ -458,5 +458,12 @@ img, video {
     display: flex;
   }
 }
+@media (max-width: 768px) {
+  .btn {
+    width: auto;          /* НЕ full width */
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
 
 
