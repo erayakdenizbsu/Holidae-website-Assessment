@@ -76,6 +76,37 @@ footer {
   margin: 1rem 0;
 }
 
+.packages {
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.package-grid {
+  max-width: 1000px;
+  margin: 2rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.package-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.price {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+@media (max-width: 900px) {
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .package-grid {
     grid-template-columns: 1fr;
