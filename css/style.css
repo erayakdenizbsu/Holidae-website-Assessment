@@ -150,12 +150,24 @@ footer {
   font-weight: bold;
 }
 
-.form-message.success { color: #1b7a2a; }
-.form-message.error { color: #b00020; }
+.form-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-message.success {
+  color: #0a4cff;
+}
+
+.form-message.error {
+  color: #b00020;
+}
 
 @media (max-width: 900px) {
   .form-grid { grid-template-columns: 1fr; }
 }
+
 
 /* --- Gallery --- */
 .gallery-wrap {
