@@ -39,26 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-<nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="packages.html">Packages</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Request a quote</a>
-</nav>
-const toggle = document.querySelector(".nav-toggle");
-const nav = document.getElementById("mainNav");
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.getElementById("mainNav");
 
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("show");
-  });
-}
-const toggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
+  if (!toggle || !nav) return;
 
-if (toggle && nav) {
   toggle.addEventListener("click", () => {
     nav.classList.toggle("open");
   });
-}
+});
+
 
