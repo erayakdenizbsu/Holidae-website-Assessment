@@ -437,5 +437,31 @@ img, video {
   margin: 5px 0;
   border-radius: 2px;
 }
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #0f4cff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .nav a {
+    color: white;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+}
 
 
