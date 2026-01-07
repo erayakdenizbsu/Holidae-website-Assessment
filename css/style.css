@@ -76,9 +76,10 @@ footer {
   margin: 1rem 0;
 }
 
-.packages {
-  padding: 2.5rem 1rem;
-  text-align: center;
+.package-card ul {
+  padding-left: 1.2rem;   /* намалява отстоянието */
+  margin-left: 0;
+  list-style-position: inside;
 }
 
 .package-grid {
