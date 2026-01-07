@@ -45,3 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
   <a href="about.html">About</a>
   <a href="contact.html">Request a quote</a>
 </nav>
+const toggle = document.querySelector(".nav-toggle");
+const nav = document.getElementById("mainNav");
+
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+}
