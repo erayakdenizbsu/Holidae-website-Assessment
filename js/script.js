@@ -39,3 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+<nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="packages.html">Packages</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Request a quote</a>
+</nav>
