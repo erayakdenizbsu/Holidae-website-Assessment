@@ -443,20 +443,23 @@ img, video {
   }
 
   .nav {
-    display: none;
-    flex-direction: column;
-    background: #0f4cff;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    padding: 1rem 0;
-  }
+   .nav{
+  display: none;
+  flex-direction: column;
+  background: #0f4cff;
 
-  .nav a {
-    color: white;
-    padding: 12px;
-    text-align: center;
+  position: fixed;
+  top: 70px;
+  left: 14px;
+  right: 14px;
+  width: auto;
+
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+  z-index: 9998;
+}
+
   }
 
   .nav.open {
