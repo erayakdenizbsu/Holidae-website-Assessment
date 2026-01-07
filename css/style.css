@@ -370,4 +370,33 @@ img, video {
     max-width: 360px;
   }
 }
+/* --- Hamburger menu --- */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: #1554f6;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin: 1rem auto;
+  }
+}
 
