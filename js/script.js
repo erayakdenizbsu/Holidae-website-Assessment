@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   toggle.addEventListener("click", () => {
     nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", nav.classList.contains("open"));
   });
 });
 
