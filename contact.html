@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Holidae | Request a Quote</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Holidae</h1>
+  <p class="tagline">Request a quote</p>
+</header>
+
+<main class="packages">
+  <h2>Tell us what you need</h2>
+
+  <section class="form-wrap">
+    <form id="quoteForm" novalidate>
+      <div class="form-grid">
+        <input id="fullName" name="fullName" type="text" placeholder="Full name" required>
+        <input id="email" name="email" type="email" placeholder="Email address" required>
+
+        <select id="month" name="month" required>
+          <option value="">Preferred month</option>
+          <option>January</option><option>February</option><option>March</option>
+          <option>April</option><option>May</option><option>June</option>
+          <option>July</option><option>August</option><option>September</option>
+          <option>October</option><option>November</option><option>December</option>
+        </select>
+
+        <input id="people" name="people" type="number" min="1" placeholder="Number of travellers" required>
+
+        <textarea id="notes" name="notes" placeholder="Any notes (budget, departure airport, hotel preference)"></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Send request</button>
+      </div>
+
+      <p class="form-message" id="formMessage" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© Holidae – Website prototype for assessment</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
